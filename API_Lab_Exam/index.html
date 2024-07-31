@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Reviews</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4 text-center">Movie Info Search</h1>
+        <div class="input-group mb-3">
+            <input type="text" id="search-input" class="form-control" placeholder="Enter movie title">
+            <div class="input-group-append">
+                <button id="search-button" class="btn btn-primary">Search</button>
+            </div>
+        </div>
+        
+        <div id="movie-info" class="mb-4"></div>
+        <nav id="pagination" aria-label="Page navigation">
+            <div id="suggestions" class="list-group mb-3">
+                <!-- Movies will be displayed here -->
+            </div>
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="#" id="prev-page" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item disabled"><a class="page-link" id="current-page">1</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" id="next-page" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
